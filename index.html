@@ -1,0 +1,383 @@
+<?php
+
+if ($_POST['submit']){
+    
+    if (!$_POST['name']) {
+        $error="please enter your name";
+    }
+
+    if (!$_POST['email']) {
+        $error="please enter your email";
+    }
+
+    if (!$_POST['phone']) {
+        $error="please enter your phone number";
+    }
+
+    if (!$_POST['message']) {
+        $error="please type a message";
+    }
+
+    if ($error) {
+        $result="whoops, that's not quite right..";
+    }
+
+}
+
+?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Digical Drawlings Web Design, Stroud UK</title>
+    <meta name="description" content="This is a free Bootstrap landing page theme created for BootstrapZero. Feature video background and one page design." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/ionicons.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Oswald|Raleway:300|Roboto|Tajawal:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i>Digical Drawlings</a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="page-scroll" href="#one">Free Consultation</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#two">What makes a great website?</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#three">View my work</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#four">My skill set</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#last">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="first">
+        <div class="header-content">
+            <div class="inner">
+                <h1 class="cursive ">Digical Drawlings Web Design</h1>
+                <div class="tag-line media wow fadeIn" data-wow-delay='0.7s'>
+                    <h4>Websites that look great<br>on all devices, <br>search engine optimised, <br>and will help to grow your business</h4>
+                </div>
+                <hr>
+                <a href="#last" class="btn btn-primary btn-xl page-scroll">Get in touch</a>
+            </div>
+        </div>
+        <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2.jpg" id="video-background">
+            <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Traffic-blurred2.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+    </header>
+    <section class="bg-primary" id="one">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
+                    <h2 class="margin-top-0 text-primary">Contact me to arrange a free consultation</h2>
+                    <br>
+                    <p class="text-faded">
+                        Knowing my client's target market and requirements are key to building successful websites and marketing campaigns. Book a meeting to discuss what package suits your needs and begin the design process.
+                    </p>
+                    <a href="#three" class="btn btn-default btn-xl page-scroll">View projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="two">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="margin-top-0 text-primary">What makes a great website?</h2>
+                    <hr class="primary">
+                    <h4>A website thats works for a business has traffic driven to it through carefully researched keywords and copywriting, keeps visitors through engaging content and has a great user experience which minimises click through rate.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="fas fa-mobile-alt fa-5x wow fadeIn" data-wow-delay=".3s"></i>
+                        <h3>Responsive</h3>
+                        <p class="text-muted">Your site looks good on all devices from large monitors to mobile - especially mobile! over 50% of web pages are acessed via mobile.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center" data-wow-delay=".3s">
+                    <div class="feature">
+                    <i class="fab fa-wordpress fa-5x wow fadeIn" ></i>
+                        <h3>Content management</h3>
+                        <p class="text-muted">My sites are managed using wordpress. You the client can easily add content and update your website. A website that has regular new content added will bring visitors back to the site and increase the ranking in search engines.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <i class="fas fa-crosshairs fa-5x wow fadeIn" data-wow-delay=".3s"></i>
+                        <h3>Optimised</h3>
+                        <p class="text-muted">Your site will be search engine optimsed and built to have fastest possible load times through testing to ensure compiance across all browsers</p>
+                    </div>
+                </div>
+                   
+            </div>
+        </div>
+    </section>
+    <section id="three" class="no-padding">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-12 text-center">
+                    <h2 class="margin-top-0 text-primary">View my work</h2>
+                </div> 
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/screenshot-mindful-u.jpg">
+                        <img src="./assets/screenshot-mindful-u.jpg" class="img-responsive" alt="Image 1">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/beach.jpg">
+                        <img src="./assets/beach.jpg" class="img-responsive" alt="Image 2">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+				<div class="clearfix hidden-lg"> </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/lake.jpg">
+                        <img src="./assets/lake.jpg" class="img-responsive" alt="Image 3">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/bike.jpg">
+                        <img src="./assets/bike.jpg" class="img-responsive" alt="Image 4">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+				<div class="clearfix hidden-lg"> </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/city.jpg">
+                        <img src="./assets/city.jpg" class="img-responsive" alt="Image 5">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/colors.jpg">
+                        <img src="./assets/colors.jpg" class="img-responsive" alt="Image 6">
+                        <div class="gallery-box-caption">
+                            <div class="gallery-box-content">
+                                <div>
+                                    <i class="icon-lg ion-ios-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="four">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                <h2 class="text-center text-primary">My skill set</h2>
+                <hr>
+                <div class="media wow fadeInRight">
+                    <h3>Design</h3>
+                    <div class="media-body media-middle">
+                        <p>I take great pride in producing sites that look great and feel great. The design process is a two way process between you the client and me the developer from concept to completion.</p>
+                    </div>
+                    
+                </div>
+                <hr>
+               
+                <div class="media wow fadeInRight">
+                    <h3>Search engine optimisation (SEO)</h3>
+                    <div class="media-body media-middle">
+                        <p>SEO is an ongoing process to stay competitive in the search rankings. I can help you write effective copy identifying key search words by knowing more about your target audience.</p>
+                    </div>
+                    
+                </div>
+
+                <hr>
+                <div class="media wow fadeInRight">
+                    <h3>Images</h3>
+                    <div class="media-body media-middle">
+                        <p>Great websites need great images. I can help source images and have a solid background in photography. I can shoot images and retrouch on spec.</p>
+                    </div>
+                    
+                </div>
+                <hr>
+                
+            </div>
+        </div>
+    </section>
+   
+    <section id="last">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="margin-top-0 wow fadeIn">Get in Touch</h2>
+                    <hr class="primary">
+                    <p>Conact me via email on <a href="mailto:alexjefferis@gmail.com" target="">alexjefferis@gmail.com</a>  or give me a call on 07429 050 392.</p>
+                    
+                </div>
+                
+
+
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 column">
+                    <h4>Information</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Benefits</a></li>
+                        <li><a href="">Developers</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 column">
+                    <h4>About</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 column">
+                    <h4>Stay Posted</h4>
+                    <form>
+                        <div class="form-group">
+                          <input type="text" class="form-control" title="No spam, we promise!" placeholder="Tell us your email">
+                        </div>
+                        <div class="form-group">
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Subscribe for updates</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-3 text-right">
+                    <h4>Follow</h4>
+                    <ul class="list-inline">
+                      <li><a rel="nofollow" href="" title="Twitter"><i class="icon-lg ion-social-twitter-outline"></i></a>&nbsp;</li>
+                      <li><a rel="nofollow" href="" title="Facebook"><i class="icon-lg ion-social-facebook-outline"></i></a>&nbsp;</li>
+                      <li><a rel="nofollow" href="" title="Dribble"><i class="icon-lg ion-social-dribbble-outline"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <br/>
+            <span class="pull-right text-muted small"><a href="http://www.bootstrapzero.com">Website built by Digical Drawlings</a> © Company Founded in 2018 </span>
+        </div>
+    </footer>
+    <div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<img src="" id="galleryImage" class="img-responsive" />
+        		<p>
+        		    <br/>
+        		    <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Close <i class="ion-android-close"></i></button><br><button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Visit site <i class="ion-android-close"></i></button>
+        		</p>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">About me</h2>
+        		<h4 class="text-center">
+        		   My name is Alex Jefferis and I am a website developer from Stroud in Gloucestershire.
+        		</h4>
+        		<p class="text-justify">
+        		    This is a new web design company founded in 2018 and I am very exited to meet new businesses and the people who run them. I have been writing code since 2015 and have been imersed in web develpment and design ever since. <br>
+
+                    <h3>My why</h3> 
+                    <p>Why do I make websites? I have a love of technolgy, visuals and many types of media. Making websites is the perfect platform to pull all these together. My goal in my business is to help  clients grow by offering well designed websites that generates more sales and drives growth of the business.  
+        		  </p>
+        		<p class="text-center"><a href="http://www.bootstrapzero.com">Download at BootstrapZero</a></p>
+        		<br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> OK </button>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <div id="alertModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<h2 class="text-center">Email sent</h2>
+        		<p class="text-center">I will be in touch shortly</p>
+        		<p class="text-center"><a href="http://www.bootstrapzero.com"></a></p>
+        		<br/>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Return to site <i class="ion-android-close"></i></button>
+        	</div>
+        </div>
+        </div>
+    </div>
+    <!--scripts loaded here -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
