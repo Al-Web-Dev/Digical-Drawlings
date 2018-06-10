@@ -1,30 +1,4 @@
-<?php
 
-if ($_POST['submit']){
-    
-    if (!$_POST['name']) {
-        $error="please enter your name";
-    }
-
-    if (!$_POST['email']) {
-        $error="please enter your email";
-    }
-
-    if (!$_POST['phone']) {
-        $error="please enter your phone number";
-    }
-
-    if (!$_POST['message']) {
-        $error="please type a message";
-    }
-
-    if ($error) {
-        $result="whoops, that's not quite right..";
-    }
-
-}
-
-?>
 
 <!DOCTYPE html>
 <html>
@@ -139,7 +113,7 @@ if ($_POST['submit']){
                 <div class="col-lg-4 col-md-4 text-center">
                     <div class="feature">
                         <i class="fas fa-crosshairs fa-5x wow fadeIn" data-wow-delay=".3s"></i>
-                        <h3>Optimised</h3>
+                        <h3><span style='color: #527abd'>Op</span><span style='color: #e34136'>ti</span><span style='color: #f8bb16'>mi</span><span style='color: #34ab4f'>se</span><span style='color: #fff'>d</span></h3>
                         <p class="text-muted">Your site will be search engine optimsed and built to have fastest possible load times through testing to ensure compiance across all browsers</p>
                     </div>
                 </div>
@@ -152,6 +126,7 @@ if ($_POST['submit']){
             <div class="row no-gutter">
                 <div class="col-lg-12 text-center">
                     <h2 class="margin-top-0 text-primary">View my work</h2>
+                    <p>Websites are beiing build as we speak! More sites going online very soon..! Watch these spaces..</p>
                 </div> 
                 <div class="col-lg-4 col-sm-6">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/screenshot-mindful-u.jpg">
@@ -166,8 +141,8 @@ if ($_POST['submit']){
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/beach.jpg">
-                        <img src="./assets/beach.jpg" class="img-responsive" alt="Image 2">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/coming-soon-desk-image.jpg">
+                        <img src="./assets/coming-soon-desk-image.jpg" class="img-responsive" alt="Image 2">
                         <div class="gallery-box-caption">
                             <div class="gallery-box-content">
                                 <div>
@@ -179,8 +154,8 @@ if ($_POST['submit']){
                 </div>
 				<div class="clearfix hidden-lg"> </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/lake.jpg">
-                        <img src="./assets/lake.jpg" class="img-responsive" alt="Image 3">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/code-screen.jpg">
+                        <img src="./assets/code-screen.jpg" class="img-responsive" alt="Image 3">
                         <div class="gallery-box-caption">
                             <div class="gallery-box-content">
                                 <div>
@@ -191,8 +166,8 @@ if ($_POST['submit']){
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/bike.jpg">
-                        <img src="./assets/bike.jpg" class="img-responsive" alt="Image 4">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="./assets/hand-over-keyboard.jpg">
+                        <img src="./assets/hand-over-keyboard.jpg" class="img-responsive" alt="Image 4">
                         <div class="gallery-box-caption">
                             <div class="gallery-box-content">
                                 <div>
@@ -236,16 +211,16 @@ if ($_POST['submit']){
                 <h2 class="text-center text-primary">My skill set</h2>
                 <hr>
                 <div class="media wow fadeInRight">
-                    <h3>Design</h3>
+                    <h3>Design and Website Development</h3>
                     <div class="media-body media-middle">
-                        <p>I take great pride in producing sites that look great and feel great. The design process is a two way process between you the client and me the developer from concept to completion.</p>
+                        <p>I take great pride in producing sites that look great and feel great. The design process is a two way process between you the client and me the developer from concept to completion.<br> Being a designer and a programmer allows me greater control and flexibilty of the look and user experience of a web site without the constraints of pre-made themes and templates.</p>
                     </div>
                     
                 </div>
                 <hr>
                
                 <div class="media wow fadeInRight">
-                    <h3>Search engine optimisation (SEO)</h3>
+                    <h3>Search Engine Optimisation (SEO)</h3>
                     <div class="media-body media-middle">
                         <p>SEO is an ongoing process to stay competitive in the search rankings. I can help you write effective copy identifying key search words by knowing more about your target audience.</p>
                     </div>
@@ -345,7 +320,7 @@ if ($_POST['submit']){
         	<div class="modal-body">
         		<h2 class="text-center">About me</h2>
         		<h4 class="text-center">
-        		   My name is Alex Jefferis and I am a website developer from Stroud in Gloucestershire.
+        		   My name is Alex Jefferis and I am a website developer from Stroud in Gloucestershire, UK.
         		</h4>
         		<p class="text-justify">
         		    This is a new web design company founded in 2018 and I am very exited to meet new businesses and the people who run them. I have been writing code since 2015 and have been imersed in web develpment and design ever since. <br>
@@ -353,9 +328,9 @@ if ($_POST['submit']){
                     <h3>My why</h3> 
                     <p>Why do I make websites? I have a love of technolgy, visuals and many types of media. Making websites is the perfect platform to pull all these together. My goal in my business is to help  clients grow by offering well designed websites that generates more sales and drives growth of the business.  
         		  </p>
-        		<p class="text-center"><a href="http://www.bootstrapzero.com">Download at BootstrapZero</a></p>
+        		
         		<br/>
-        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> OK </button>
+        		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> Home </button>
         	</div>
         </div>
         </div>
